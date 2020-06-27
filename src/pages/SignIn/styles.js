@@ -32,13 +32,13 @@ padding:10px;
 border-radius:7px;
 `;
 
-export const SubmitButtom =styled.TouchableOpacity`
+export const Botao =styled.TouchableOpacity`
     align-items: center;
     justify-content: center;
     background-color: #00b94a;
     width:90%;
     height:45px;
-    border-radius:7px;
+    border-radius:25px;
     margin-top:10px;
 `;
 

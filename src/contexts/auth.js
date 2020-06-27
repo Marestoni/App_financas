@@ -3,10 +3,7 @@ import React, {createContext, useState} from 'react';
 export const AuthContext = createContext({});
 
 function AuthProvider({ children }){
-    const [user, setUser] = useState({
-        nome:'André',
-        uid: '1231321321'
-    });
+    const [user, setUser] = useState(null);
     return(
         <AuthContext.Provider value={{signed: !!user, user}}>
             {children}

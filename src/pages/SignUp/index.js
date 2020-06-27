@@ -3,7 +3,7 @@ import { View, Text, Platform} from 'react-native';
 import {AuthContext} from '../../contexts/auth';
 
 import { Background, Container, Logo, AreaInput,
-         Input, SubmitButtom, SubmitText} from '../SignIn/styles';
+         Input, Botao, SubmitText} from '../SignIn/styles';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
@@ -49,9 +49,9 @@ export default function SignIn() {
               onChange={(texto) => setPassword(texto)}
             />
          </AreaInput>
-         <SubmitButtom onPress={() => {}}>
+         <Botao onPress={() => alert('Oi Geovana')}>
            <SubmitText>Cadastrar</SubmitText>
-         </SubmitButtom>
+         </Botao>
 
        </Container>
    </Background>

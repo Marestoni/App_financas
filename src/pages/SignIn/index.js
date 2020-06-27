@@ -3,7 +3,7 @@ import { View, Text, Platform} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {AuthContext} from '../../contexts/auth';
 
-import { Background, Container, Logo, AreaInput, Input, SubmitButtom, SubmitText, Link, LinkText} from './styles';
+import { Background, Container, Logo, AreaInput, Input, Botao, SubmitText, Link, LinkText} from './styles';
 
 export default function SignIn() {
   const navigation = useNavigation();
@@ -44,9 +44,9 @@ export default function SignIn() {
               onChange={(texto) => setPassword(texto)}
             />
          </AreaInput>
-         <SubmitButtom onPress={handleLogin}>
+         <Botao onPress={handleLogin}>
            <SubmitText>Acessar</SubmitText>
-         </SubmitButtom>
+         </Botao>
 
          <Link onPress={() => navigation.navigate('SignUp')}>
           <LinkText>Criar uma conta</LinkText>
